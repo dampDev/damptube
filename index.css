@@ -1,3 +1,9 @@
+:root{
+    --grey--color: grey;
+    --brand--color: red;
+
+
+}
 *{
     padding: 0;
     margin: 0;
@@ -37,7 +43,27 @@ header{
     padding: 0 20px;
 }
 
+header i {
+    font-size: 2.5rem;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+/* logo color */
+.fa-bars {
+    color: var(--grey--color);
+}
+.fa-youtube {
+    color: var(--brand--color);
+}
+
 .header--logo {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
     justify-self: left;
     align-self: center;
 }
