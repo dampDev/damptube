@@ -1,8 +1,6 @@
 :root{
     --grey--color: grey;
     --brand--color: red;
-
-
 }
 *{
     padding: 0;
@@ -44,7 +42,7 @@ header{
 }
 
 header i {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 button {
@@ -70,7 +68,20 @@ button {
 .header--search{
     place-self: center;
 }
+.header--form{
+    display: flex;
+}
 
+.header--input{
+    display: block;
+    width: 90%;
+    padding: 5px;
+    border-radius: 1px solid var(--grey--color);
+}
+.header--form .header--button{
+    background-color: var(--grey--color);
+    padding: 5px;
+}
 .header--profile {
     justify-self: right;
     align-self: center;
