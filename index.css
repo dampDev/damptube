@@ -1,5 +1,5 @@
 :root{
-    --grey--color: grey;
+    --grey--color: #d7d7d7;
     --brand--color: red;
 }
 *{
@@ -37,7 +37,7 @@ main {
 header{
     grid-area: header;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 20% 60% 20%;
     padding: 0 20px;
 }
 
@@ -52,10 +52,11 @@ button {
 
 /* logo color */
 .fa-bars {
-    color: var(--grey--color);
+    color: #030303;
 }
 .fa-youtube {
     color: var(--brand--color);
+    width: 20%;
 }
 
 .header--logo {
@@ -67,6 +68,7 @@ button {
 }
 .header--search{
     place-self: center;
+    width: 100%;
 }
 .header--form{
     display: flex;
@@ -75,20 +77,55 @@ button {
 .header--input{
     display: block;
     width: 90%;
-    padding: 5px;
-    border-radius: 1px solid var(--grey--color);
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--grey--color);
 }
-.header--form .header--button{
+.header--button__grey{
     background-color: var(--grey--color);
     padding: 5px;
 }
+
+.header--form .fa-microphone{
+    padding-left: 10px;
+}
 .header--profile {
-    justify-self: right;
-    align-self: center;
+    /* justify-self: right;
+    align-self: center; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 aside {
     grid-area: sidebar;
+    width: 1005;
     height: 100%;
-   
+}
+
+.aside--list li {
+    padding: 15px 10px;
+}
+
+.aside--list li a {
+    color: #030303;
+}
+
+.aside--list li:hover{
+    background-color: #d7d7d7;
+}
+.tags{
+    display: flex;
+}
+.tags li {
+    margin: 0  10px;
+    height: max-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--grey--color);
+}
+
+.tags li:hover{
+    background-color: #030303;
+    color: white;
 }
