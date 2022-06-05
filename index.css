@@ -101,9 +101,10 @@ button {
 
 .menu-collapsed {
     grid-area: sidebar;
-    background-color: aqua;
+    
     width: 80px    ;
     transition: all 500ms ease;
+    
     
 }
 
@@ -147,13 +148,16 @@ button {
 
 
 .menu-expanded {
+    display: block;
     background-color: blueviolet;
-    width: 200px;
+    width: 250px;
 
     height: 100%;
     left: 0;
     top: 0;
     transition: all 500ms ease;
+    position: fixed;
+    z-index: 1;
 }
 
 .menu-expanded .aside--list{
