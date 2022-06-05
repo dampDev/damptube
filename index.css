@@ -115,10 +115,6 @@ button {
     
 }
 
-.menu-collapsed .aside--list {
-    
-}
-
 .menu-collapsed .aside--list li {
     
     padding: 15px 10px;
@@ -149,19 +145,40 @@ button {
 
 .menu-expanded {
     display: block;
-    background-color: blueviolet;
+    background-color: white;
     width: 250px;
 
     height: 100%;
-    left: 0;
-    top: 0;
+    
     transition: all 500ms ease;
     position: fixed;
     z-index: 1;
 }
 
-.menu-expanded .aside--list{
+.menu-expanded aside{
+    width: 100%;
+    height: 100%;
+    
 
+}
+
+.menu-expanded li{
+    height: 40px;
+    margin: 0 auto;
+}
+
+.menu-expanded li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+    
+}
+
+.menu-expanded li a span {
+    padding-left: 20px;
 }
 
 .tags{
