@@ -14,7 +14,7 @@
     <div class="layout">
         <header >
             <div class="header--logo">
-                <button class="header--button" type="button"><i class="fa-solid fa-bars"></i></button>
+                <button id="menu-btn" class="header--button" type="button"><i class="fa-solid fa-bars"></i></button>
                 <span class="logo--icon">
                 <i class="fa-brands fa-youtube"></i>
 
@@ -39,22 +39,28 @@
             </div>
            
         </header>
-        <aside>
-            <ul class="aside--list">
-                <li>
-                    <a href="">Principal</a>
-                </li>
-                <li>
-                    <a href="">Explorar</a>
-                </li>
-                <li>
-                    <a href="">shorts</a>
-                </li>
-                <li>
-                    <a href="">suscripciones</a>
-                </li>
-            </ul>
-        </aside>
+       
+            <div id="sidemenu" class="menu-collapsed">
+                <aside>
+                    
+                <ul class="aside--list">
+                    <li>
+                        <a href=""><i class="fa-solid fa-house"></i> <span>inicio</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-compass"></i> <span>Explorar</span></a>
+                    </li>
+                    <li>
+                        <a href="">shorts</a>
+                    </li>
+                    <li>
+                        <a href="">suscripciones</a>
+                    </li>
+                </ul>
+            </aside>
+            </div>
+            
+       
         <ul class="tags">
             <li class="tags--item">Todos</li>
             <li class="tags--item">web</li>
@@ -241,5 +247,13 @@
           
         </main>
     </div>
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+        });
+    </script>
 </body>
 </html>
