@@ -29,14 +29,24 @@ li {
     "header header"
     "sidebar tags" 
     "sidebar content";
-    grid-template-columns: minmax(auto) minmax(auto);
+    grid-template-columns: 80px minmax(auto);
     grid-template-rows: 10% 5% 85%;
     height: 100vh;
     width: 100%;
 }
+header {
+    height: 50px;
+    padding-top: 5px;
+    overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  z-index: 2020;
 
-header{
-    grid-area: header;
+}
+
+.header--container{
+    
     display: grid;
     grid-template-columns: 20% 60% 20%;
     padding: 0 20px;
@@ -100,9 +110,16 @@ button {
 }
 
 .menu-collapsed {
+
     grid-area: sidebar;
+    position: fixed;
+    top: 40px;
+    left: 10px;
     
-    width: 80px    ;
+    
+    
+    
+    width: 30px;
     transition: all 500ms ease;
     
     
@@ -134,7 +151,7 @@ button {
 .menu-collapsed .aside--list li a span{
     margin-top: 10px;
     font-size: 1rem;
-    transition: all 400ms ease;
+    
 }
 
 
@@ -144,15 +161,19 @@ button {
 
 
 .menu-expanded {
-    display: block;
+    
+
+    position: fixed;
+    z-index: 2020;
+    top: 40px;
     background-color: white;
     width: 250px;
 
     height: 100%;
     
-    transition: all 500ms ease;
-    position: fixed;
-    z-index: 1;
+    
+    /* position: fixed;
+    z-index: 1; */
 }
 
 .menu-expanded aside{
