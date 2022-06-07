@@ -26,7 +26,7 @@ li {
 .layout {
     display: grid;
     grid-template-areas: 
-    "header header"
+    "sidebar header"
     "sidebar tags" 
     "sidebar content";
     grid-template-columns: 80px minmax(auto);
