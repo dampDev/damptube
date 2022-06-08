@@ -26,10 +26,10 @@ li {
 .layout {
     display: grid;
     grid-template-areas: 
-    "sidebar header"
+    "header header"
     "sidebar tags" 
     "sidebar content";
-    grid-template-columns: 80px minmax(auto);
+    grid-template-columns: minmax(80px, 230px) minmax(auto);
     grid-template-rows: 10% 5% 85%;
     height: 100vh;
     width: 100%;
@@ -39,8 +39,8 @@ header {
     padding-top: 5px;
     overflow: hidden;
   background-color: white;
-  position: fixed; /* Set the navbar to fixed position */
-  width: 100%; /* Full width */
+  position: fixed; 
+  width: 100%; 
   z-index: 2020;
 
 }
@@ -112,24 +112,23 @@ button {
 .menu-collapsed {
 
     grid-area: sidebar;
+    width: 100%;
     position: fixed;
+ 
     top: 40px;
     left: 10px;
-    
-    
-    
-    
-    width: 30px;
-    transition: all 500ms ease;
-    
+     
     
 }
 
 .menu-collapsed aside {
     
-    width: 100%;
+    width: 80px;
     height: 100%;
     
+}
+aside{
+    width: 100%;
 }
 
 .menu-collapsed .aside--list li {
@@ -159,21 +158,21 @@ button {
     background-color: #d7d7d7;
 }
 
+.aside--img{
+    width: 25px;
+}
+
 
 .menu-expanded {
-    
-
-    position: fixed;
-    z-index: 2020;
+    position: sticky;
+    z-index: 1;
     top: 40px;
+    left: 10px;
     background-color: white;
-    width: 250px;
+    width: 230px;
 
     height: 100%;
     
-    
-    /* position: fixed;
-    z-index: 1; */
 }
 
 .menu-expanded aside{
