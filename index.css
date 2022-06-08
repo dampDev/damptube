@@ -200,6 +200,10 @@ button {
     padding-left: 20px;
 }
 
+.asidedown_none{
+    display: none;
+}
+
 .tags{
     grid-area: tags;
     display: flex;

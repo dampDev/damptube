@@ -46,8 +46,7 @@
        
             <div id="sidemenu" class="menu-collapsed">
 
-                <aside class="aside--up">
-                   
+                <aside class="aside--up">                   
                     
                 <ul class="aside--list">
                     <li>
@@ -65,11 +64,8 @@
                     <li>
                         <a href=""> <img class="aside--img" src="./img/playlist.png" alt=""> <span>Suscripciones</span></a>  
                     </li>
-                </ul>
-            </aside>
-            <aside class="aside--down">                  
-                    
-                <ul class="aside--list">
+                </ul>                  
+                <ul id="asidedown" class="asidedown_none"">
                     <li>
                         <a href=""> <img class="aside--img" src="./img/homepage.png" alt=""><span>otroooo</span></a>
                     </li>
@@ -279,9 +275,12 @@
     <script>
         const btn = document.querySelector('#menu-btn');
         const menu = document.querySelector('#sidemenu');
+        const menu2 = document.querySelector('#asidedown');
         btn.addEventListener('click', e => {
             menu.classList.toggle("menu-expanded");
             menu.classList.toggle("menu-collapsed");
+            menu2.classList.toggle("aside--list__down");
+            menu2.classList.toggle("asidedown_none");
         });
     </script>
 </body>
