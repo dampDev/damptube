@@ -121,15 +121,13 @@ button {
     
 }
 
-.menu-collapsed aside {
+.menu-collapsed .aside--up{
     
     width: 80px;
     height: 100%;
     
 }
-aside{
-    width: 100%;
-}
+
 
 .menu-collapsed .aside--list li {
     
@@ -164,8 +162,9 @@ aside{
 
 
 .menu-expanded {
-    position: sticky;
-    z-index: 1;
+
+    position: fixed;
+    z-index: 2020;
     top: 40px;
     left: 10px;
     background-color: white;
